@@ -1,0 +1,94 @@
+/* ── Reset & base tag style ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Tag selector: style all <h2> headings */
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+  color: #1a1a2e;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 0.25rem;
+}
+
+/* ── ID styles ── */
+#site-header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem 2.5rem;   /* box model: padding */
+  margin-bottom: 0;            /* box model: margin */
+}
+
+#site-header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.05em;
+}
+
+#site-footer {
+  background-color: #1a1a2e;
+  color: #aaa;
+  text-align: center;
+  padding: 1.25rem;
+  margin-top: 2rem;
+}
+
+#about img {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem 0;
+  border: 3px solid #4a90e2;
+}
+
+/* ── Class styles — .section applied to 3 <div>s ── */
+.section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem 2.5rem;   /* box model: padding */
+  margin: 1.5rem auto;    /* box model: margin */
+  max-width: 800px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Class style — .tagline applied to 2 <p>s ── */
+.tagline {
+  font-size: 1.05rem;
+  color: #90b8e8;
+  margin-top: 0.4rem;
+  letter-spacing: 0.03em;
+}
+
+/* ── Class style — .project-card applied to 3 <li>s ── */
+.project-card {
+  background: #f0f4ff;
+  border-left: 4px solid #4a90e2;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+  list-style: none;
+}
+
+/* ── Link styles with hover selector ── */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #e24a7a;   /* CSS hover selector — changes link color */
+  text-decoration: underline;
+}
